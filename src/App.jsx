@@ -1,8 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import SignInPage from "./pages/auth/SignInPage"
 import SignUpPage from "./pages/auth/SignUpPage"
+import apiFetch from "./services/apiFetch";
 
-function App() {
+const response = await apiFetch("GET", "/api-key/info");
+console.log(response.status);
+
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>
