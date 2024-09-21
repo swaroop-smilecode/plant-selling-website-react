@@ -4,7 +4,6 @@ import SignUpPage from "./pages/auth/SignUpPage"
 import apiFetch from "./services/apiFetch";
 
 const response = await apiFetch("GET", "/api-key/info");
-console.log(response.status);
 
 const App = () => {
   return (
