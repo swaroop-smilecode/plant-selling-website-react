@@ -1,6 +1,6 @@
 import { useState } from "react";
 import FormContainer from "./FormContainer";
-import * as userService from "../../services/user";
+import * as userService from "services/user";
 
 const SignInPage = () => {
     const [userName, setUserName] = useState("");
