@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FormContainer from "./FormContainer";
+import { Link } from "react-router-dom";
 
 const SignInPage = () => {
     const [userName, setUserName] = useState("");
@@ -39,6 +40,11 @@ const SignInPage = () => {
                         Sign in
                     </button>
                 </form>
+            </div>
+            <div>
+                <Link to="/sign-up" className="text-md text-green-600 underline">
+                    create an account
+                </Link>
             </div>
         </FormContainer>
     )

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import FormContainer from "./FormContainer";
 import * as userService from "services/user";
+import { Link } from "react-router-dom";
 
 const SignInPage = () => {
     const [userName, setUserName] = useState("");
@@ -97,6 +98,11 @@ const SignInPage = () => {
                         )}
                     </button>
                 </form>
+            </div>
+            <div>
+                <Link to="/" className="text-md text-green-600 underline">
+                    sign in
+                </Link>
             </div>
         </FormContainer>
     )
