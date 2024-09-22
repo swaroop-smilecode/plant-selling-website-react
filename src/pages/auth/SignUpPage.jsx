@@ -9,7 +9,6 @@ const SignInPage = () => {
     const [confirmPassword, setConfirmPassword] = useState("");
 
     const [error, setError] = useState("");
-
     const [loading, setLoading] = useState(false);
 
     return (
